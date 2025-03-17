@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Dosis,sans-serif;
+}
+body{
+    /* position: fixed; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.wrapper{
+    margin: auto;
+    /* min-width: 1024px; */
+    padding: 1rem;
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+
+.banner{
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-image: url("../pics/Clothes-banner.png");
+}
+
+/* .main{ */
+    /* padding: 1rem; */
+    /* border: 1px solid rgb(255, 0, 0); */
+/* } */
+.pic-container{
+    /* border: 1px solid rgb(255, 0, 0); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.pic-container a{
+    text-decoration: none;
+}
+
+.card{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+    text-align: center;
+    min-height: 40vh;
+    min-width: 40vw;
+}
+
+.tops-pic{
+    background-image: url("../pics/CLothes-top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom-pic{
+    background-image: url("../pics/Clothes-bottom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 800px) {
+    body{
+        position: relative;
+    }
+    .card{
+        min-height: 60vh;
+        min-width: 30vw;
+    }
+    .card span{
+        display: none;
+    }
+    .main{
+        margin: 4rem;
+    }
+    .pic-container{
+        column-gap: 3rem;
+    }
+    .banner{
+        padding: 4rem;
+    }
+}
