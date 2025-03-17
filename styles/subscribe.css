@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Dosis,sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family:Dosis,sans-serif;
+    
+}
+
+div.scroll {
+    background-color: #DEDEDE;
+    width: 600px;
+    height: 37rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    margin:0 auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,sans-serif;
+    text-align: left;
+    padding: 2rem;
+  }
+
+
+.backBtn{   background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,sans-serif;
+    border-radius: 5px;
+}
+ 
+.backBtn1{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+  
+
+.gambar_daun{
+    background-color: #D8BE85;
+    height: fit-content;
+    text-align: center;
+
+}
+
+.gambar_daun img{
+    width: 100vw;
+}
+
+
+.wrapper{
+    margin: auto;
+    padding: 1rem;
+}
+
+.banner{
+    color: white;
+    font-size: 2rem;
+
+    text-align: center;
+    padding: 1rem;
+    background-image: url("../pics/subBanner.png");
+    font-family:Dosis,sans-serif;
+}
+
+
+
+
+.container{
+    background-color: #D8BE85;
+    align-items: center;
+}
+
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1rem;
+    padding: 1.8rem 1rem;
+}
+
+form .fields .input-field{
+    display: flex;
+    padding: 1rem 1rem;
+    width: calc(100% / 2);
+    flex-direction: column;
+    
+}
+
+.input-field label{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2e2e2e;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+
+.input-field input[type="date"]{
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.container form button, .nextBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 15rem;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background-color: #000000;
+    margin:0 auto;
+    cursor: pointer;
+}
+.tncbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 15rem;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background-color: #bf1414;
+    margin:0 auto;
+    cursor: pointer;
+}
+
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+
+.error{
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #D8BE85;
+}
+
+.error-con{
+    background-color: #D8BE85;
+}
